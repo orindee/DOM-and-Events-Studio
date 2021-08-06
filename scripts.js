@@ -51,7 +51,7 @@ abortMission.addEventListener('click',function(){
  
 up.addEventListener('click',function(){
     let x=10;
-    shuttleHeight.innerHTML=(parseInt(shuttleHeight.innerHTML))-10000;
+    shuttleHeight.innerHTML=(parseInt(shuttleHeight.innerHTML))+10000;
     let newPosition=(parseInt(rocket.style.bottom)+x)+'px';
     rocket.style.bottom = parseInt(rocket.style.bottom) + 10 + 'px';
 })
