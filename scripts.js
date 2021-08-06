@@ -12,6 +12,7 @@ const down=document.getElementById("down");
 const left=document.getElementById("left");
 const right=document.getElementById("right");
 const rocket=document.getElementById("rocket");
+shuttleHeight=0;
 rocket.style.position='absolute';
 rocket.style.bottom="0px";
 rocket.style.left="0px";
