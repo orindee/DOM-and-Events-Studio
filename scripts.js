@@ -42,6 +42,7 @@ abortMission.addEventListener('click',function(){
         status.innerText="Mission aborted.";
         shuttleBackground.style.background="green";
         shuttleHeight.innerText="0";
+        rocket.style.bottom=parseInt(rocket.style.bottom);
         return true;
     } else {
             status.innerText='User does not want to continue!';
