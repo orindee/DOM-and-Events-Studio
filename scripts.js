@@ -12,6 +12,7 @@ const down=document.getElementById("down");
 const left=document.getElementById("left");
 const right=document.getElementById("right");
 const rocket=document.getElementById("rocket");
+shuttleHeight=0;
 rocket.style.position='absolute';
 rocket.style.bottom="0px";
 rocket.style.left="0px";
@@ -51,7 +52,7 @@ abortMission.addEventListener('click',function(){
  
 up.addEventListener('click',function(){
     let x=10;
-    shuttleHeight.innerHTML=(parseInt(shuttleHeight.innerHTML))-10000;
+    shuttleHeight.innerHTML=(parseInt(shuttleHeight.innerHTML))+10000;
     let newPosition=(parseInt(rocket.style.bottom)+x)+'px';
     rocket.style.bottom = parseInt(rocket.style.bottom) + 10 + 'px';
 })
